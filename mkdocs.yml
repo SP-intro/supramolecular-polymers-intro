@@ -30,7 +30,7 @@ theme:
       primary: black
       accent: indigo
   favicon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'/>"
-  logo: assets/logo.png
+  logo: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'/>"
   font:
     text: Noto Sans JP
     code: JetBrains Mono
