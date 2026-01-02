@@ -209,10 +209,10 @@
 body {
   /* ほんのり光が差す感じ：派手にしない */
   background:
-    radial-gradient(500px 500px at -5% -5%, rgba(255, 255, 255, 0.342), transparent 60%),
-    radial-gradient(900px 900px at -5% -5%, rgba(252, 233, 152, 0.349), transparent 55%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(0,0,0,0.00) 45%),
-    #010025; 
+    radial-gradient(500px 500px at 20% -5%, rgba(255, 255, 255, 0.342), transparent 60%),
+    radial-gradient(900px 900px at 20% -5%, rgba(252, 233, 152, 0.349), transparent 55%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.13), rgb(0, 0, 0) 95%),
+    #01002c; 
   background-attachment: fixed;
 }
 
@@ -229,7 +229,7 @@ body {
 
 /* 左ナビの文字サイズをわずかに下げる */
 .md-sidebar--primary .md-nav {
-  font-size: 0.95em !important;
+  font-size: 1.02em !important;
 }
 
 /* 左サイドバー（drawer）の“枠＋面”を強制 */
