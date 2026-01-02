@@ -49,7 +49,7 @@
   font-size: 0.8rem;
 }
 .md-content__inner {
-  max-width: 980px; /* 横に広すぎると読めないので */
+  max-width: 1020px; /* 横に広すぎると読めないので */
 }
 
 /*見出しの余白を増やす*/
@@ -209,10 +209,10 @@
 body {
   /* ほんのり光が差す感じ：派手にしない */
   background:
-    radial-gradient(1000px 700px at 12% -10%, rgba(56,189,248,0.13), transparent 60%),
-    radial-gradient(900px 650px at 105% 8%, rgba(167,243,208,0.10), transparent 55%),
-    radial-gradient(800px 600px at 30% 120%, rgba(252,211,77,0.06), transparent 55%),
-    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.00) 45%),
+    radial-gradient(1000px 700px at 12% -10%, rgba(56, 191, 248, 0.219), transparent 60%),
+    radial-gradient(900px 650px at 105% 8%, rgba(167, 243, 208, 0.267), transparent 55%),
+    radial-gradient(800px 600px at 30% 120%, rgba(252, 211, 77, 0.308), transparent 55%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.151), rgba(0,0,0,0.00) 45%),
     #0b0f14; /* ベースの黒（真っ黒より少し柔らかい） */
   background-attachment: fixed;
 }
@@ -231,7 +231,7 @@ body {
 /* 左ナビ（primary sidebar）の幅を広げる */
 @media (min-width: 1220px) {
   .md-sidebar--primary {
-    width: 360px !important;   /* 例：標準より少し広め */
+    width: 420px !important;   /* 例：標準より少し広め */
   }
 }
 
