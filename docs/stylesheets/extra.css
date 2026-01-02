@@ -288,7 +288,7 @@ body {
 /* 文字側が上に詰まりすぎる場合の保険 */
 .md-sidebar--primary .md-nav__title .md-nav__ellipsis {
   margin: 0 !important;
-  line-height: 1.35 !important;
+  line-height: 2.70 !important;
 }
 /*------------------------------------*/
 
