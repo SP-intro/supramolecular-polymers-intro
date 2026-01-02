@@ -15,16 +15,28 @@
 }
 
 /* 見出しごとに色を変える（全ページ共通） */
-.md-typeset h1 { color: #e8e8e8; }            /* ページタイトル */
-.md-typeset h2 { color: #7dd3fc; }            /* セクション */
-.md-typeset h3 { color: #a7f3d0; }            /* サブセクション */
-.md-typeset h4 { color: #fcd34d; }            /* 小見出し */
-.md-typeset h5, .md-typeset h6 { color: #fca5a5; }
+.md-typeset h1 { color: #fcff5d; }            /* ページタイトル */
+.md-typeset h2 { color: #68db77; }            /* セクション */
+.md-typeset h3 { color: #9d88e9; }            /* サブセクション */
+.md-typeset h4 { color: #e48383; }            /* 小見出し */
+.md-typeset h5, .md-typeset h6 { color: #ffffff; }
 
-/* 任意：見出し下に細いアクセント線を出す（視認性UP） */
-.md-typeset h2 { border-bottom: 1px solid rgba(125,211,252,0.35); padding-bottom: .2em; }
-.md-typeset h3 { border-bottom: 1px solid rgba(167,243,208,0.25); padding-bottom: .1em; }
+/* 見出し下に細いアクセント線を出す */
+.md-typeset h1 { border-bottom: 1px solid #8a8b34; padding-bottom: .3em; }
+.md-typeset h2 { border-bottom: 1px solid #3b7e44; padding-bottom: .2em; }
+.md-typeset h3 { border-bottom: 1px solid #5d508a; padding-bottom: .1em; }
 
-/* 任意：本文のリンク色も少し明るく */
+/* 本文のリンク色も少し明るく */
 .md-typeset a { color: #93c5fd; }
 .md-typeset a:hover { color: #bfdbfe; }
+
+/* 本文中のリンクを常に下線にする */
+.md-content a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1.5px;
+}
+.md-content a:hover {
+  text-decoration-thickness: 2.5px;
+}
+
