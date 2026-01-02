@@ -223,8 +223,8 @@
 body {
   /* ほんのり光が差す感じ：派手にしない */
   background:
-    radial-gradient(800px 800px at 10% 0%, rgba(255, 255, 255, 0.342), transparent 60%),
-    radial-gradient(1400px 1400px at 10% 0%, rgba(252, 233, 152, 0.349), transparent 55%),
+    radial-gradient(800px 800px at 10% 0%, rgba(255, 255, 255, 0.247), transparent 60%),
+    radial-gradient(1400px 1400px at 10% 0%, rgba(252, 234, 152, 0.158), transparent 55%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.13), rgb(0, 0, 0) 95%),
     #01002c; 
   background-attachment: fixed;
