@@ -24,7 +24,7 @@
 ## 超分子重合という考え方
 - [isodesmic 重合](polymerization/isodesmic.md)　準備中
 - [cooperative 重合](polymerization/cooperative.md)　準備中
-- [核形成と成長](polymerization/nucleation-growth.md)　準備中
+- [核形成と成長](polymerization/nucleation-elongation.md)　準備中
 - [環構造と線状構造](polymerization/ring-vs-linear.md)　準備中
 
 ## 動的であるということ
@@ -33,11 +33,16 @@
 - [ラグタイムと履歴効果](dynamics/lag-time.md)　準備中
 
 ## どうやって観測するのか
-- [UV/Vis 吸収](characterization/uvvis.md)　準備中
+- [測定方法まとめ](characterization/index.md)　準備中
+###　測定装置
+- [紫外可視分光法（UV/Vis）](characterization/uvvis.md)　準備中
 - [円二色性（CD）](characterization/cd.md)　準備中
-- [IR と水素結合](characterization/ir.md)　準備中
+- [蛍光（FL）](characterization/fl.md)　準備中
+- [赤外分光（IR）](characterization/ir.md)　準備中
+- [核磁気共鳴（NMR）](characterization/nmr.md)　準備中
 - [散乱（SAXS / SANS / DLS）](characterization/scattering.md)　準備中
-- [顕微鏡（AFM / TEM）](characterization/microscopy.md)　準備中
+- [X線回折（XRD））](characterization/xrd.md)　準備中
+- [顕微鏡（AFM / TEM / SEM）](characterization/microscopy.md)　準備中
 
 ## 生体分子との比較
 - [タンパク質フォールディング](biology-comparison/protein-folding.md)　準備中
