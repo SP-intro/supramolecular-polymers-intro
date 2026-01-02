@@ -3,6 +3,14 @@ site_name: 超分子ポリマーについてのポータル
 extra_css:
   - stylesheets/extra.css
 
+markdown_extensions:
+  - pymdownx.caret
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+
 theme:
   name: material
   features:
@@ -14,9 +22,6 @@ theme:
       accent: indigo
   logo: assets/logo.png
   favicon: assets/favicon.png
-
-
-
 
 nav:
   - Home: index.md

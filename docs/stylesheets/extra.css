@@ -1,3 +1,4 @@
+/*挿入動画に関する設定*/
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -6,6 +7,7 @@
   border-radius: 12px;
 }
 
+/*挿入動画に関する設定*/
 .video-container iframe {
   position: absolute;
   inset: 0;
@@ -36,7 +38,145 @@
   text-underline-offset: 0.18em;
   text-decoration-thickness: 1.5px;
 }
+
 .md-content a:hover {
   text-decoration-thickness: 2.5px;
 }
 
+/*行間と本文幅の最適化*/
+.md-typeset {
+  line-height: 1.8;
+  font-size: 1.02rem;
+}
+.md-content__inner {
+  max-width: 860px; /* 横に広すぎると読めないので */
+}
+
+/*見出しの余白を増やす*/
+.md-typeset h2 { margin-top: 2.0em; }
+.md-typeset h3 { margin-top: 1.5em; }
+
+
+/* アドモニションを黒背景向けに読みやすく（余白と文字） */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+}
+
+/* =========================
+   Admonition (tip / warning / example) - dark theme tuning
+   ========================= */
+
+/* 共通：箱の形・余白・背景 */
+.md-typeset .admonition {
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  margin: 1.1em 0;
+  overflow: hidden;                  /* タイトル背景を角丸内に収める */
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* 共通：タイトル行（上の帯） */
+.md-typeset .admonition > .admonition-title {
+  padding: 0.65em 0.9em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* 共通：本文側の余白（Materialの構造に合わせて） */
+.md-typeset .admonition > .admonition-title + * {
+  padding: 0.85em 0.95em 0.95em 0.95em;
+}
+
+/* 共通：最後の要素の下余白を消して締まりを良くする */
+.md-typeset .admonition p:last-child,
+.md-typeset .admonition ul:last-child,
+.md-typeset .admonition ol:last-child {
+  margin-bottom: 0;
+}
+
+/* 共通：左のアクセント線（種類の色が一目で分かる） */
+.md-typeset .admonition {
+  border-left-width: 6px;
+}
+
+/* 重要（tip） */
+.md-typeset .admonition.tip {
+  border-color: rgba(252, 144, 125, 0.8);
+}
+.md-typeset .admonition.tip > .admonition-title {
+  background: rgba(252, 144, 125, 0.16);
+}
+
+/* 注意（warning） */
+.md-typeset .admonition.warning {
+  border-color: rgba(252, 211, 77, 0.9);
+}
+.md-typeset .admonition.warning > .admonition-title {
+  background: rgba(252, 211, 77, 0.16);
+}
+
+/* 例（example） */
+.md-typeset .admonition.example {
+  border-color: rgba(167, 243, 208, 0.85);
+}
+.md-typeset .admonition.example > .admonition-title {
+  background: rgba(167, 243, 208, 0.14);
+}
+
+/*---------------------*/
+
+
+/* =========================
+   Collapsible admonition (??? note) - dark theme tuning
+   ========================= */
+
+/* 折りたたみ全体の器 */
+.md-typeset details {
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden; /* タイトル背景をきれいに収める */
+}
+
+/* summary（見出し行）を“タイトル”として扱う */
+.md-typeset details > summary {
+  padding: 0.6em 0.8em;
+  cursor: pointer;
+}
+
+/* 開閉の三角アイコン周りの余白感を安定させる */
+.md-typeset details > summary::before {
+  margin-top: 0.15em;
+}
+
+/* 中身（本文）の余白 */
+.md-typeset details[open] > summary + * {
+  padding: 0.8em 0.9em 0.9em 0.9em;
+}
+
+/* ---- note（補足）だけ色を最適化 ---- */
+.md-typeset details.note {
+  border: 1px solid rgba(148, 163, 184, 0.55); /* 落ち着いたグレー */
+  background: rgba(148, 163, 184, 0.06);      /* 本文の薄い背景 */
+}
+
+.md-typeset details.note > summary {
+  background: rgba(148, 163, 184, 0.14);      /* タイトル行を少し濃く */
+}
+
+/* ホバーで“押せる”感を出す（黒背景で重要） */
+.md-typeset details.note > summary:hover {
+  background: rgba(148, 163, 184, 0.20);
+}
+
+/* 文章が詰まって見えるのを防ぐ */
+.md-typeset details.note p:last-child,
+.md-typeset details.note ul:last-child,
+.md-typeset details.note ol:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------*/

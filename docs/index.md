@@ -5,6 +5,18 @@
 
 ---
 
+!!! tip "重要"
+    ここに重要ポイントを書く。
+
+!!! warning "注意"
+    ここに注意点を書く。
+
+!!! example "例"
+    ここに例を書く。
+
+??? note "補足（読み飛ばしてOK）"
+    ここに補足を書く。
+
 ## はじめに
 - [生体分子は自己集合によって成り立っている](introduction/biological-self-assembly.md)
 - [自己集合とは何か](introduction/what-is-self-assembly.md)
