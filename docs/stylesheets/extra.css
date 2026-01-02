@@ -287,13 +287,18 @@ body {
 .md-sidebar--primary .md-nav__list .md-nav__list{
   padding-left: 0.55rem !important;
   margin-left: 0.35rem !important;
-  border-left: 1px solid rgba(255,255,255,0.08) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.219) !important;
 }
 
 /* 現在地 */
 .md-sidebar--primary .md-nav__link--active{
   background: rgba(56,189,248,0.14) !important;
   border: 1px solid rgba(56,189,248,0.22) !important;
+}
+
+/* ホバー */
+.md-sidebar--primary .md-nav__link:hover{
+  background: rgba(255,255,255,0.06) !important;
 }
 
 /*----------------------*/
