@@ -296,11 +296,6 @@ body {
   border: 1px solid rgba(56,189,248,0.22) !important;
 }
 
-/* ホバー */
-.md-sidebar--primary .md-nav__link:hover{
-  background: rgba(255,255,255,0.06) !important;
-}
-
 /*----------------------*/
 
 /* サイト全体：ロゴを完全に非表示（ヘッダー／サイドバー／drawer すべて） */
