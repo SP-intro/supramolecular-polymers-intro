@@ -222,3 +222,79 @@ body {
   background: transparent;
 }
 /*-------------------*/
+
+/* =========================
+   Left navigation (Primary sidebar) を見やすく
+   ToCとは別デザイン：左にアクセント線＋濃い面＋階層の見分け
+   ========================= */
+
+/* 左サイドバー全体（背景は少し濃いめ） */
+.md-sidebar--primary {
+  padding: 0.6rem 0.4rem;
+}
+
+/* 左ナビの“カード” */
+.md-sidebar--primary .md-nav--primary {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03); /* ToCより少し濃い */
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  overflow: hidden;
+  position: relative;
+}
+
+/* 左にアクセント線（ToCと差別化） */
+.md-sidebar--primary .md-nav--primary::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: rgba(56, 189, 248, 0.55); /* シアン系の縦ライン */
+}
+
+/* タイトル行（サイト名／ナビ見出し） */
+.md-sidebar--primary .md-nav--primary > .md-nav__title {
+  padding: 0.75rem 0.85rem 0.65rem 1.0rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* リンクの余白（押しやすく） */
+.md-sidebar--primary .md-nav__link {
+  padding: 0.35rem 0.85rem 0.35rem 1.0rem;
+  border-radius: 10px;
+  margin: 0.08rem 0.35rem;
+}
+
+/* 階層：インデントを少し明確に */
+.md-sidebar--primary .md-nav__list .md-nav__list {
+  padding-left: 0.55rem;
+  margin-left: 0.35rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.08); /* 階層ガイド線 */
+}
+
+/* セクション（折りたたみ見出し）を見分けやすく */
+.md-sidebar--primary .md-nav__item--section > .md-nav__link {
+  font-weight: 700;
+  opacity: 0.95;
+}
+
+/* アクティブなページ（今いる場所） */
+.md-sidebar--primary .md-nav__link--active {
+  background: rgba(56, 189, 248, 0.14);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+}
+
+/* ホバー */
+.md-sidebar--primary .md-nav__link:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* 余白：カード内の下側に少し空気を入れる */
+.md-sidebar--primary .md-nav__list {
+  padding-bottom: 0.5rem;
+}
+/*----------------------*/
