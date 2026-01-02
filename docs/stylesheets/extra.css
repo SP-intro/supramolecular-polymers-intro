@@ -52,6 +52,20 @@
   max-width: 1020px; /* 横に広すぎると読めないので */
 }
 
+/* 本文中の太字 */
+.md-typeset p strong,
+.md-typeset li strong {
+  color: #ffd479;
+}
+
+/* 見出し内の太字 */
+.md-typeset h1 strong,
+.md-typeset h2 strong,
+.md-typeset h3 strong {
+  color: #ffb703;
+}
+
+
 /*見出しの余白を増やす*/
 .md-typeset h2 { margin-top: 2.0em; }
 .md-typeset h3 { margin-top: 1.5em; }
@@ -230,6 +244,11 @@ body {
 /* 左ナビの文字サイズをわずかに下げる */
 .md-sidebar--primary .md-nav {
   font-size: 1.0em !important;
+}
+
+/* 左ナビ全体を少し下げる */
+.md-sidebar--primary {
+  padding-top: 0.8rem;
 }
 
 /* 左サイドバー（drawer）の“枠＋面”を強制 */
