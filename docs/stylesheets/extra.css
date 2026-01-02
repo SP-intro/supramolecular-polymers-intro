@@ -49,7 +49,7 @@
   font-size: 0.8rem;
 }
 .md-content__inner {
-  max-width: 920px; /* 横に広すぎると読めないので */
+  max-width: 980px; /* 横に広すぎると読めないので */
 }
 
 /*見出しの余白を増やす*/
@@ -227,6 +227,18 @@ body {
    Left navigation (Primary sidebar) を見やすく
    ToCとは別デザイン：左にアクセント線＋濃い面＋階層の見分け
    ========================= */
+
+/* 左ナビ（primary sidebar）の幅を広げる */
+@media (min-width: 1220px) {
+  .md-sidebar--primary {
+    width: 360px !important;   /* 例：標準より少し広め */
+  }
+}
+
+/* 左ナビの文字サイズをわずかに下げる */
+.md-sidebar--primary .md-nav {
+  font-size: 0.95em !important;
+}
 
 /* 左サイドバー（drawer）の“枠＋面”を強制 */
 .md-sidebar--primary .md-sidebar__scrollwrap {
