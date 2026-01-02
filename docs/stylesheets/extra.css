@@ -246,52 +246,6 @@ body {
   font-size: 1.1em !important;
 }
 
-/* =========================
-   左ナビ上部：ロゴとサイト名を縦積み＆中央揃えに固定
-   ========================= */
-
-/* 左ナビのタイトル領域そのものを“縦積みコンテナ”にする */
-.md-sidebar--primary .md-nav__title {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  gap: 0.55rem !important;           /* ロゴと文字の間隔 */
-  padding: 1.0rem 0.8rem 0.9rem !important;
-  text-align: center !important;
-}
-
-/* タイトル領域の中にリンク（a）があるケース：それも縦積みに */
-.md-sidebar--primary .md-nav__title a {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 0.55rem !important;
-}
-
-/* ロゴ要素（Materialで出やすいパターンを広くカバー） */
-.md-sidebar--primary .md-nav__title .md-logo,
-.md-sidebar--primary .md-nav__title .md-nav__button.md-logo,
-.md-sidebar--primary .md-nav__title .md-header__button.md-logo {
-  margin: 0 !important;
-  align-self: center !important;
-}
-
-/* ロゴ画像の表示を安定化（左寄りを潰す） */
-.md-sidebar--primary .md-nav__title img {
-  display: block !important;
-  margin: 0 !important;
-  width: auto !important;
-  height: 56px !important;           /* 48〜64pxで調整推奨 */
-}
-
-/* 文字側が上に詰まりすぎる場合の保険 */
-.md-sidebar--primary .md-nav__title .md-nav__ellipsis {
-  margin: 0 !important;
-  line-height: 2.70 !important;
-}
-/*------------------------------------*/
-
 /* 左サイドバー（drawer）の“枠＋面”を強制 */
 .md-sidebar--primary .md-sidebar__scrollwrap {
   padding: 0.7rem 0.5rem !important;
