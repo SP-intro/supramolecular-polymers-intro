@@ -27,6 +27,7 @@
 - [静電相互作用（クーロン相互作用）](interactions/electrostatics.md)
 
 ## 超分子重合の機構
+- [超分子重合を引き起こす方法](polymerization/triggering-methods.md)
 - [isodesmic 重合](polymerization/isodesmic.md)
 - [cooperative 重合](polymerization/cooperative.md)
 - [核形成と成長](polymerization/nucleation-elongation.md)
