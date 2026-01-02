@@ -55,14 +55,14 @@
 /* 本文中の太字 */
 .md-typeset p strong,
 .md-typeset li strong {
-  color: #ffef96;
+  color: #fcefa6;
 }
 
 /* 見出し内の太字 */
 .md-typeset h1 strong,
 .md-typeset h2 strong,
 .md-typeset h3 strong {
-  color: #fdcf58;
+  color: #ffd771;
 }
 
 
