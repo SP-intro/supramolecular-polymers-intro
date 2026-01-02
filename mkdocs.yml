@@ -49,11 +49,14 @@ nav:
       - ラグタイムと履歴効果: dynamics/lag-time.md
 
   - どうやって観測するのか:
-      - UV/Vis 吸収: characterization/uvvis.md
+      - 紫外可視分光（UV/Vis）: characterization/uvvis.md
       - 円二色性（CD）: characterization/cd.md
-      - IR と水素結合: characterization/ir.md
+      - 蛍光（FL）: characterization/fl.md
+      - 赤外分光（IR）: characterization/ir.md
+      - 核磁気共鳴（NMR）: characterization/nmr.md
       - 散乱（SAXS / SANS / DLS）: characterization/scattering.md
-      - 顕微鏡（AFM / TEM）: characterization/microscopy.md
+      - X線回折（XRD））: characterization/xrd.md
+      - 顕微鏡（AFM / TEM / SEM）: characterization/microscopy.md
 
   - 生体分子との比較:
       - タンパク質フォールディング: biology-comparison/protein-folding.md
