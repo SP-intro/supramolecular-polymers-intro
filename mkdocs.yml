@@ -40,7 +40,7 @@ nav:
   - 超分子重合という考え方:
       - isodesmic 重合: polymerization/isodesmic.md
       - cooperative 重合: polymerization/cooperative.md
-      - 核形成と成長: polymerization/nucleation-growth.md
+      - 核形成と成長: polymerization/nucleation-elongation.md
       - 環構造と線状構造: polymerization/ring-vs-linear.md
 
   - 動的であるということ:
