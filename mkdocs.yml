@@ -26,7 +26,7 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   font:
-    text: LXGW WenKai TC
+    text: Noto Sans JP
     code: JetBrains Mono
 
 
@@ -49,6 +49,7 @@ nav:
       - π–π 相互作用: interactions/pi-pi.md
       - 疎水効果と溶媒: interactions/hydrophobic-effect.md
       - 金属配位: interactions/metal-coordination.md
+      - 静電相互作用: interactions/electrostatics.md
 
   - 超分子重合という考え方:
       - isodesmic 重合: polymerization/isodesmic.md

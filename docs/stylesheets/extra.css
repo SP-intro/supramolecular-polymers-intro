@@ -153,3 +153,72 @@
   margin: 0.9em 0;
 }
 .card h2, .card h3 { margin-top: 0.2em; }
+
+/* =========================
+   Table of contents (ToC) を“囲って”区別する
+   - 右サイドバーToC / toc.integrate の両方に対応
+   ========================= */
+
+/* 右サイドバーのToC（Materialの二次サイドバー） */
+.md-sidebar--secondary .md-nav--secondary {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  padding: 0.6em 0.7em;
+  margin: 0.8em 0.3em;
+  backdrop-filter: blur(8px);
+}
+
+/* タイトル（"Table of contents" 相当）の見た目 */
+.md-sidebar--secondary .md-nav--secondary > .md-nav__title {
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  padding-bottom: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+/* ToCの項目間隔を少し読みやすく */
+.md-sidebar--secondary .md-nav--secondary .md-nav__link {
+  padding-top: 0.18em;
+  padding-bottom: 0.18em;
+}
+
+/* 本文内に統合されたToC（toc.integrate時に効くことが多い） */
+.md-typeset .toc {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  padding: 0.8em 0.9em;
+  margin: 1.0em 0 1.2em 0;
+  backdrop-filter: blur(8px);
+}
+
+/* 本文内ToCの見出し */
+.md-typeset .toc > .toc-title {
+  font-weight: 700;
+  margin: 0 0 0.6em 0;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+/*---------------*/
+
+/* =========================
+   背景：微妙なグラデーション（黒背景を上質に）
+   ========================= */
+
+body {
+  /* ほんのり光が差す感じ：派手にしない */
+  background:
+    radial-gradient(1000px 700px at 12% -10%, rgba(56,189,248,0.13), transparent 60%),
+    radial-gradient(900px 650px at 105% 8%, rgba(167,243,208,0.10), transparent 55%),
+    radial-gradient(800px 600px at 30% 120%, rgba(252,211,77,0.06), transparent 55%),
+    linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.00) 45%),
+    #0b0f14; /* ベースの黒（真っ黒より少し柔らかい） */
+  background-attachment: fixed;
+}
+
+/* コンテンツ領域が“背景を上書き”するテーマ設定への保険 */
+.md-container {
+  background: transparent;
+}
+/*-------------------*/
