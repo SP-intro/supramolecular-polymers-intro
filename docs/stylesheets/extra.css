@@ -348,3 +348,23 @@ body {
 }
 
 /*----------------------*/
+
+/* ===== 検出用：左サイドバー上部の要素を可視化 ===== */
+.md-sidebar--primary { outline: 3px solid rgba(255,0,0,0.6) !important; }
+
+/* 左サイドバー内の“タイトルっぽい所”を全部炙り出す */
+.md-sidebar--primary .md-nav__title,
+.md-sidebar--primary .md-nav__title[for="__drawer"],
+.md-sidebar--primary .md-sidebar__inner,
+.md-sidebar--primary .md-nav--primary {
+  outline: 3px solid rgba(0,255,255,0.55) !important;
+}
+
+/* ロゴっぽい要素も全部炙り出す */
+.md-sidebar--primary .md-logo,
+.md-sidebar--primary img[alt*="logo" i],
+.md-sidebar--primary a[aria-label*="logo" i],
+.md-sidebar--primary a.md-logo,
+.md-sidebar--primary .md-header__button.md-logo {
+  outline: 3px solid rgba(255,0,255,0.55) !important;
+}
