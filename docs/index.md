@@ -24,7 +24,7 @@
 - [π–π 相互作用](interactions/pi-pi.md)　準備中
 - [疎水効果と溶媒](interactions/hydrophobic-effect.md)　準備中
 - [金属配位](interactions/metal-coordination.md)　準備中
-- [静電相互作用（クーロン相互作用）](electrostatics.md)
+- [静電相互作用（クーロン相互作用）](interactions/electrostatics.md)
 
 ## 超分子重合という考え方
 - [isodesmic 重合](polymerization/isodesmic.md)　準備中
