@@ -1,21 +1,11 @@
-# 超分子ポリマーについてのポータル
+# 超分子ポリマー入門
 
-超分子はすごい！！！！何でもできる！
+**生体のすごさは、分子が勝手に集まって“形”を作り、機能を生み出すことにある。**
+**超分子ポリマーは、その仕組みを人工分子で再現し、条件しだいで形を変えたり、伸び縮みしたり、つながったり離れたりする“動く材料”を扱う考え方だ。**
+**このサイトでは、自己集合の仕組みから測定法までを、できるだけ直感で分かるように解説する。**
 
 
 ---
-
-!!! tip "重要"
-    ここに重要ポイントを書く。
-
-!!! warning "注意"
-    ここに注意点を書く。
-
-!!! example "例"
-    ここに例を書く。
-
-??? note "補足（読み飛ばしてOK）"
-    ここに補足を書く。
 
 ## はじめに
 - [生体分子は自己集合によって成り立っている](introduction/biological-self-assembly.md)
@@ -28,6 +18,8 @@
 - [なぜ「ポリマー」と呼ぶのか](supramolecular-polymer/why-polymer.md)　準備中
 
 ## 分子はどうやってつながるのか
+- [相互作用のいろいろ](interactions/index.md)
+### 超分子ポリマーでよく使われる相互作用
 - [水素結合](interactions/hydrogen-bond.md)　準備中
 - [π–π 相互作用](interactions/pi-pi.md)　準備中
 - [疎水効果と溶媒](interactions/hydrophobic-effect.md)　準備中
@@ -46,14 +38,14 @@
 
 ## どうやって観測するのか
 - [測定方法まとめ](characterization/index.md)　準備中
-###　測定装置
+###　主な測定装置
 - [紫外可視分光法（UV/Vis）](characterization/uvvis.md)　準備中
 - [円二色性（CD）](characterization/cd.md)　準備中
 - [蛍光（FL）](characterization/fl.md)　準備中
 - [赤外分光（IR）](characterization/ir.md)　準備中
 - [核磁気共鳴（NMR）](characterization/nmr.md)　準備中
 - [散乱（SAXS / SANS / DLS）](characterization/scattering.md)　準備中
-- [X線回折（XRD））](characterization/xrd.md)　準備中
+- [X線回折（XRD）](characterization/xrd.md)　準備中
 - [顕微鏡（AFM / TEM / SEM）](characterization/microscopy.md)　準備中
 
 ## 生体分子との比較

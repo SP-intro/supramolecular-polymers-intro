@@ -145,14 +145,6 @@
 
 /*--------------------------*/
 
-/* 背景：ほんのりグラデ＋粒状感 */
-body {
-  background:
-    radial-gradient(1200px 800px at 20% -10%, rgba(56,189,248,0.12), transparent 60%),
-    radial-gradient(900px 700px at 110% 10%, rgba(167,243,208,0.10), transparent 55%),
-    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.0));
-}
-
 .card {
   border: 1px solid rgba(255,255,255,0.10);
   background: rgba(255,255,255,0.04);

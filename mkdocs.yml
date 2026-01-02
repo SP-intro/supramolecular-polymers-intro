@@ -1,4 +1,4 @@
-site_name: 超分子ポリマーについてのポータル
+site_name: 超分子ポリマー入門
 
 extra_css:
   - stylesheets/extra.css
@@ -28,6 +28,10 @@ theme:
       accent: indigo
   logo: assets/logo.png
   favicon: assets/favicon.png
+  font:
+    text: Noto Sans JP
+    code: JetBrains Mono
+
 
 nav:
   - Home: index.md
@@ -43,6 +47,7 @@ nav:
       - なぜ「ポリマー」と呼ぶのか: supramolecular-polymer/why-polymer.md
 
   - 分子はどうやってつながるのか:
+      - 相互作用のいろいろ: interactions/index.md
       - 水素結合: interactions/hydrogen-bond.md
       - π–π 相互作用: interactions/pi-pi.md
       - 疎水効果と溶媒: interactions/hydrophobic-effect.md
@@ -60,6 +65,7 @@ nav:
       - ラグタイムと履歴効果: dynamics/lag-time.md
 
   - どうやって観測するのか:
+      - 測定方法まとめ: characterization/index.md
       - 紫外可視分光（UV/Vis）: characterization/uvvis.md
       - 円二色性（CD）: characterization/cd.md
       - 蛍光（FL）: characterization/fl.md
