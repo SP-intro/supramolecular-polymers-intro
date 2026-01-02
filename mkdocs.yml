@@ -29,7 +29,7 @@ theme:
     - scheme: slate
       primary: black
       accent: indigo
-  logo: assets/logo.png
+  favicon: assets/favicon.png
   font:
     text: Noto Sans JP
     code: JetBrains Mono
