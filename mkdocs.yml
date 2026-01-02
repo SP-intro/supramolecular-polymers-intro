@@ -30,6 +30,7 @@ theme:
       primary: black
       accent: indigo
   favicon: assets/favicon.png
+  logo: assets/logo.png
   font:
     text: Noto Sans JP
     code: JetBrains Mono
