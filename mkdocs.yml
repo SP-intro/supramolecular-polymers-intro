@@ -17,8 +17,6 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
-    - toc.integrate  
-    - navigation.top  
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -29,7 +27,7 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   font:
-    text: Noto Sans JP
+    text: Klee One
     code: JetBrains Mono
 
 
