@@ -246,10 +246,17 @@ body {
   font-size: 1.0em !important;
 }
 
-/* 左ナビ全体を少し下げる */
-.md-sidebar--primary {
-  padding-top: 0.8rem;
+/* ロゴを少し上に */
+.md-header__button.md-logo {
+  margin-top: 0.2rem;
+  margin-bottom: 0.8rem;
 }
+
+/* サイトタイトルを少し下に */
+.md-header__title {
+  padding-top: 1.5rem;
+}
+
 
 /* 左サイドバー（drawer）の“枠＋面”を強制 */
 .md-sidebar--primary .md-sidebar__scrollwrap {
