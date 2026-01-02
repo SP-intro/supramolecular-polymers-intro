@@ -45,11 +45,11 @@
 
 /*行間と本文幅の最適化*/
 .md-typeset {
-  line-height: 1.8;
-  font-size: 1.02rem;
+  line-height: 1.6;
+  font-size: 0.8rem;
 }
 .md-content__inner {
-  max-width: 860px; /* 横に広すぎると読めないので */
+  max-width: 920px; /* 横に広すぎると読めないので */
 }
 
 /*見出しの余白を増やす*/
@@ -66,42 +66,6 @@
 /* =========================
    Admonition (tip / warning / example) - dark theme tuning
    ========================= */
-
-/* 共通：箱の形・余白・背景 */
-.md-typeset .admonition {
-  border-radius: 12px;
-  border-width: 1px;
-  border-style: solid;
-  margin: 1.1em 0;
-  overflow: hidden;                  /* タイトル背景を角丸内に収める */
-  background: rgba(255, 255, 255, 0.04);
-}
-
-/* 共通：タイトル行（上の帯） */
-.md-typeset .admonition > .admonition-title {
-  padding: 0.65em 0.9em;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  margin: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-/* 共通：本文側の余白（Materialの構造に合わせて） */
-.md-typeset .admonition > .admonition-title + * {
-  padding: 0.85em 0.95em 0.95em 0.95em;
-}
-
-/* 共通：最後の要素の下余白を消して締まりを良くする */
-.md-typeset .admonition p:last-child,
-.md-typeset .admonition ul:last-child,
-.md-typeset .admonition ol:last-child {
-  margin-bottom: 0;
-}
-
-/* 共通：左のアクセント線（種類の色が一目で分かる） */
-.md-typeset .admonition {
-  border-left-width: 6px;
-}
 
 /* 重要（tip） */
 .md-typeset .admonition.tip {
@@ -180,3 +144,20 @@
 }
 
 /*--------------------------*/
+
+/* 背景：ほんのりグラデ＋粒状感 */
+body {
+  background:
+    radial-gradient(1200px 800px at 20% -10%, rgba(56,189,248,0.12), transparent 60%),
+    radial-gradient(900px 700px at 110% 10%, rgba(167,243,208,0.10), transparent 55%),
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.0));
+}
+
+.card {
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  border-radius: 14px;
+  padding: 1.0em 1.1em;
+  margin: 0.9em 0;
+}
+.card h2, .card h3 { margin-top: 0.2em; }
