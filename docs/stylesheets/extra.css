@@ -243,20 +243,31 @@ body {
 
 /* 左ナビの文字サイズをわずかに下げる */
 .md-sidebar--primary .md-nav {
-  font-size: 1.0em !important;
+  font-size: 1.1em !important;
 }
 
-/* ロゴを少し上に */
-.md-header__button.md-logo {
-  margin-top: 0.2rem;
-  margin-bottom: 0.8rem;
+/* ===== 左ナビ：ロゴとサイト名の整理 ===== */
+
+/* 上下余白 */
+.md-sidebar--primary .md-nav__title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
 }
 
-/* サイトタイトルを少し下に */
-.md-header__title {
-  padding-top: 1.5rem;
+/* ロゴ画像 */
+.md-sidebar--primary .md-nav__title img {
+  display: block;
+  margin: 0 auto 0.6rem auto;
+  max-height: 56px;
+  width: auto;
 }
 
+/* タイトル文字 */
+.md-sidebar--primary .md-nav__title {
+  line-height: 1.4;
+}
+/*----------------------------*/
 
 /* 左サイドバー（drawer）の“枠＋面”を強制 */
 .md-sidebar--primary .md-sidebar__scrollwrap {
