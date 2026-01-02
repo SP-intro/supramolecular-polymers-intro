@@ -29,7 +29,7 @@ theme:
     - scheme: slate
       primary: black
       accent: indigo
-  favicon: ""
+  favicon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'/>"
   logo: assets/logo.png
   font:
     text: Noto Sans JP
