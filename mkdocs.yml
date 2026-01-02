@@ -14,7 +14,6 @@ markdown_extensions:
 theme:
   name: material
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
     - search.suggest
@@ -27,7 +26,7 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.png
   font:
-    text: Klee One
+    text: LXGW WenKai TC
     code: JetBrains Mono
 
 
