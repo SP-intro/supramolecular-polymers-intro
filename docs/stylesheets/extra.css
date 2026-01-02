@@ -13,3 +13,18 @@
   height: 100%;
   border: 0;
 }
+
+/* 見出しごとに色を変える（全ページ共通） */
+.md-typeset h1 { color: #e8e8e8; }            /* ページタイトル */
+.md-typeset h2 { color: #7dd3fc; }            /* セクション */
+.md-typeset h3 { color: #a7f3d0; }            /* サブセクション */
+.md-typeset h4 { color: #fcd34d; }            /* 小見出し */
+.md-typeset h5, .md-typeset h6 { color: #fca5a5; }
+
+/* 任意：見出し下に細いアクセント線を出す（視認性UP） */
+.md-typeset h2 { border-bottom: 1px solid rgba(125,211,252,0.35); padding-bottom: .2em; }
+.md-typeset h3 { border-bottom: 1px solid rgba(167,243,208,0.25); padding-bottom: .1em; }
+
+/* 任意：本文のリンク色も少し明るく */
+.md-typeset a { color: #93c5fd; }
+.md-typeset a:hover { color: #bfdbfe; }
