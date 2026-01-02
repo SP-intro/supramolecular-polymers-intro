@@ -302,12 +302,3 @@ body {
 }
 
 /*----------------------*/
-
-/* サイト全体：ロゴを完全に非表示（ヘッダー／サイドバー／drawer すべて） */
-.md-logo,
-a.md-logo,
-.md-header__button.md-logo,
-img[alt*="logo" i],
-img[alt*="icon" i] {
-  display: none !important;
-}
