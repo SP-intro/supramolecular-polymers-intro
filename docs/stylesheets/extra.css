@@ -209,11 +209,10 @@
 body {
   /* ほんのり光が差す感じ：派手にしない */
   background:
-    radial-gradient(1000px 700px at 12% -10%, rgba(56, 191, 248, 0.219), transparent 60%),
-    radial-gradient(900px 650px at 105% 8%, rgba(167, 243, 208, 0.267), transparent 55%),
-    radial-gradient(800px 600px at 30% 120%, rgba(252, 211, 77, 0.308), transparent 55%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.151), rgba(0,0,0,0.00) 45%),
-    #0b0f14; /* ベースの黒（真っ黒より少し柔らかい） */
+    radial-gradient(500px 500px at -5% -5%, rgba(255, 255, 255, 0.342), transparent 60%),
+    radial-gradient(900px 900px at -5% -5%, rgba(252, 233, 152, 0.349), transparent 55%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(0,0,0,0.00) 45%),
+    #010025; 
   background-attachment: fixed;
 }
 
@@ -227,13 +226,6 @@ body {
    Left navigation (Primary sidebar) を見やすく
    ToCとは別デザイン：左にアクセント線＋濃い面＋階層の見分け
    ========================= */
-
-/* 左ナビ（primary sidebar）の幅を広げる */
-@media (min-width: 1220px) {
-  .md-sidebar--primary {
-    width: 420px !important;   /* 例：標準より少し広め */
-  }
-}
 
 /* 左ナビの文字サイズをわずかに下げる */
 .md-sidebar--primary .md-nav {
