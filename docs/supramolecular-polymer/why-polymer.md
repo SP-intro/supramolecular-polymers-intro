@@ -126,5 +126,5 @@
 ---
 
 ## 次に読む
-- [分子はどうやってつながるのか（水素結合）](../interactions/hydrogen-bond.md)
+- [相互作用まとめ](../interactions/index.md)
 - [超分子重合という考え方（isodesmic）](../polymerization/isodesmic.md)
