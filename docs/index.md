@@ -18,7 +18,6 @@
 
 ## 超分子ポリマーとは
 - [超分子ポリマーの定義](supramolecular-polymer/definition.md)
-- [共有結合ポリマーとの違い](supramolecular-polymer/vs-covalent-polymer.md)
 - [なぜ「ポリマー」と呼ぶのか](supramolecular-polymer/why-polymer.md)
 
 ## 相互作用の種類

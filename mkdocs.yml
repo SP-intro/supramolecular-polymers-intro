@@ -1,13 +1,16 @@
 site_name: 超分子ポリマーとは
 
+
 extra:
   social:
     - icon: fontawesome/solid/paper-plane
       link: https://forms.gle/eXE5SmywdXYjrMAD7
       name: お問い合わせフォーム
 
+
 extra_css:
   - stylesheets/extra.css
+
 
 markdown_extensions:
   - pymdownx.caret
@@ -15,6 +18,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - footnotes
 
 
 theme:
@@ -46,7 +50,6 @@ nav:
 
   - 超分子ポリマーとは:
       - 超分子ポリマーの定義: supramolecular-polymer/definition.md
-      - 共有結合ポリマーとの違い: supramolecular-polymer/vs-covalent-polymer.md
       - なぜ「ポリマー」と呼ぶのか: supramolecular-polymer/why-polymer.md
 
   - 相互作用の種類:
