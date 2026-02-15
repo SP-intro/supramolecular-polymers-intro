@@ -16,7 +16,7 @@
   border: 0;
 }
 
-/* 見出しごとに色を変える（全ページ共通） */
+/* 見出しごとに色を変える */
 .md-typeset h1 { color: #fcff5d; }            /* ページタイトル */
 .md-typeset h2 { color: #68db77; }            /* セクション */
 .md-typeset h3 { color: #9d88e9; }            /* サブセクション */
