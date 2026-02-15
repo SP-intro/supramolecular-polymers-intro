@@ -1,0 +1,304 @@
+/*挿入動画に関する設定*/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/*挿入動画に関する設定*/
+.video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 見出しごとに色を変える */
+.md-typeset h1 { color: #fcff5d; }            /* ページタイトル */
+.md-typeset h2 { color: #68db77; }            /* セクション */
+.md-typeset h3 { color: #9d88e9; }            /* サブセクション */
+.md-typeset h4 { color: #e48383; }            /* 小見出し */
+.md-typeset h5, .md-typeset h6 { color: #ffffff; }
+
+/* 見出し下に細いアクセント線を出す */
+.md-typeset h1 { border-bottom: 1px solid #8a8b34; padding-bottom: .3em; }
+.md-typeset h2 { border-bottom: 1px solid #3b7e44; padding-bottom: .2em; }
+.md-typeset h3 { border-bottom: 1px solid #5d508a; padding-bottom: .1em; }
+
+/* 本文のリンク色 */
+.md-typeset a { color: #93c5fd; }
+.md-typeset a:hover { color: #bfdbfe; }
+
+/* 本文中のリンクを常に下線にする */
+.md-content a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1.5px;
+}
+
+.md-content a:hover {
+  text-decoration-thickness: 2.5px;
+}
+
+/*行間と本文幅の最適化*/
+.md-typeset {
+  line-height: 1.6;
+  font-size: 0.8rem;
+}
+.md-content__inner {
+  max-width: 1020px; /* 横に広すぎると読めないので */
+}
+
+/* 本文中の太字 */
+.md-typeset p strong,
+.md-typeset li strong {
+  color: #d1c26a;
+}
+
+/* 見出し内の太字 */
+.md-typeset h1 strong,
+.md-typeset h2 strong,
+.md-typeset h3 strong {
+  color: #c09e49;
+}
+
+
+/*見出しの余白を増やす*/
+.md-typeset h2 { margin-top: 2.0em; }
+.md-typeset h3 { margin-top: 1.5em; }
+
+
+/* アドモニションを黒背景向けに読みやすく（余白と文字） */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+}
+
+/* =========================
+   Admonition (tip / warning / example) - dark theme tuning
+   ========================= */
+
+/* 重要（tip） */
+.md-typeset .admonition.tip {
+  border-color: rgba(252, 144, 125, 0.8);
+}
+.md-typeset .admonition.tip > .admonition-title {
+  background: rgba(252, 144, 125, 0.16);
+}
+
+/* 注意（warning） */
+.md-typeset .admonition.warning {
+  border-color: rgba(252, 211, 77, 0.9);
+}
+.md-typeset .admonition.warning > .admonition-title {
+  background: rgba(252, 211, 77, 0.16);
+}
+
+/* 例（example） */
+.md-typeset .admonition.example {
+  border-color: rgba(167, 243, 208, 0.85);
+}
+.md-typeset .admonition.example > .admonition-title {
+  background: rgba(167, 243, 208, 0.14);
+}
+
+/*---------------------*/
+
+
+/* =========================
+   Collapsible admonition (??? note) - dark theme tuning
+   ========================= */
+
+/* 折りたたみ全体の器 */
+.md-typeset details {
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden; /* タイトル背景をきれいに収める */
+}
+
+/* summary（見出し行）を“タイトル”として扱う */
+.md-typeset details > summary {
+  padding: 0.6em 0.8em;
+  cursor: pointer;
+}
+
+/* 開閉の三角アイコン周りの余白感を安定させる */
+.md-typeset details > summary::before {
+  margin-top: 0.15em;
+}
+
+/* 中身（本文）の余白 */
+.md-typeset details[open] > summary + * {
+  padding: 0.8em 0.9em 0.9em 0.9em;
+}
+
+/* ---- note（補足）だけ色を最適化 ---- */
+.md-typeset details.note {
+  border: 1px solid rgba(148, 163, 184, 0.55); /* 落ち着いたグレー */
+  background: rgba(148, 163, 184, 0.06);      /* 本文の薄い背景 */
+}
+
+.md-typeset details.note > summary {
+  background: rgba(148, 163, 184, 0.14);      /* タイトル行を少し濃く */
+}
+
+/* ホバーで“押せる”感を出す（黒背景で重要） */
+.md-typeset details.note > summary:hover {
+  background: rgba(148, 163, 184, 0.20);
+}
+
+/* 文章が詰まって見えるのを防ぐ */
+.md-typeset details.note p:last-child,
+.md-typeset details.note ul:last-child,
+.md-typeset details.note ol:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------*/
+
+.card {
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  border-radius: 14px;
+  padding: 1.0em 1.1em;
+  margin: 0.9em 0;
+}
+.card h2, .card h3 { margin-top: 0.2em; }
+
+/* =========================
+   Table of contents (ToC) を“囲って”区別する
+   - 右サイドバーToC / toc.integrate の両方に対応
+   ========================= */
+
+/* 右サイドバーのToC（Materialの二次サイドバー） */
+.md-sidebar--secondary .md-nav--secondary {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  padding: 0.6em 0.7em;
+  margin: 0.8em 0.3em;
+  backdrop-filter: blur(8px);
+}
+
+/* タイトル（"Table of contents" 相当）の見た目 */
+.md-sidebar--secondary .md-nav--secondary > .md-nav__title {
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  padding-bottom: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+/* ToCの項目間隔を少し読みやすく */
+.md-sidebar--secondary .md-nav--secondary .md-nav__link {
+  padding-top: 0.18em;
+  padding-bottom: 0.18em;
+}
+
+/* 本文内に統合されたToC（toc.integrate時に効くことが多い） */
+.md-typeset .toc {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  padding: 0.8em 0.9em;
+  margin: 1.0em 0 1.2em 0;
+  backdrop-filter: blur(8px);
+}
+
+/* 本文内ToCの見出し */
+.md-typeset .toc > .toc-title {
+  font-weight: 700;
+  margin: 0 0 0.6em 0;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+/*---------------*/
+
+/* =========================
+   背景：微妙なグラデーション（黒背景を上質に）
+   ========================= */
+
+body {
+  /* ほんのり光が差す感じ：派手にしない */
+  background:
+    radial-gradient(800px 800px at 10% 0%, rgba(255, 255, 255, 0.247), transparent 60%),
+    radial-gradient(1400px 1400px at 10% 0%, rgba(252, 234, 152, 0.158), transparent 55%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.13), rgb(0, 0, 0) 95%),
+    #01002c; 
+  background-attachment: fixed;
+}
+
+/* コンテンツ領域が“背景を上書き”するテーマ設定への保険 */
+.md-container {
+  background: transparent;
+}
+/*-------------------*/
+
+/* =========================
+   Left navigation (Primary sidebar) を見やすく
+   ToCとは別デザイン：左にアクセント線＋濃い面＋階層の見分け
+   ========================= */
+
+/* 左ナビの文字サイズをわずかに下げる */
+.md-sidebar--primary .md-nav {
+  font-size: 1.1em !important;
+}
+
+/* 左サイドバー（drawer）の“枠＋面”を強制 */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  padding: 0.7rem 0.5rem !important;
+}
+
+.md-sidebar--primary .md-nav--primary {
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  background: rgba(255,255,255,0.035) !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+/* 左にアクセント線（ToCと差別化） */
+.md-sidebar--primary .md-nav--primary::before{
+  content:"";
+  position:absolute;
+  inset: 0 auto 0 0;
+  width:4px;
+  background: rgba(56,189,248,0.55);
+}
+
+/* ナビ見出し */
+.md-sidebar--primary .md-nav--primary > .md-nav__title{
+  padding: 0.75rem 0.85rem 0.6rem 1.0rem !important;
+  font-weight: 800 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  background: rgba(255,255,255,0.02) !important;
+}
+
+/* リンクを押しやすく */
+.md-sidebar--primary .md-nav__link{
+  padding: 0.35rem 0.85rem 0.35rem 1.0rem !important;
+  border-radius: 10px !important;
+  margin: 0.08rem 0.35rem !important;
+}
+
+/* 階層ガイド線 */
+.md-sidebar--primary .md-nav__list .md-nav__list{
+  padding-left: 0.55rem !important;
+  margin-left: 0.35rem !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.219) !important;
+}
+
+/* 現在地 */
+.md-sidebar--primary .md-nav__link--active{
+  background: rgba(56,189,248,0.14) !important;
+  border: 1px solid rgba(56,189,248,0.22) !important;
+}
+
+/* ホバー */
+.md-sidebar--primary .md-nav__link:hover{
+  background: rgba(255,255,255,0.06) !important;
+}
+
+/*----------------------*/
