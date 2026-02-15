@@ -28,7 +28,7 @@
 .md-typeset h2 { border-bottom: 1px solid #3b7e44; padding-bottom: .2em; }
 .md-typeset h3 { border-bottom: 1px solid #5d508a; padding-bottom: .1em; }
 
-/* 本文のリンク色も少し明るく */
+/* 本文のリンク色 */
 .md-typeset a { color: #93c5fd; }
 .md-typeset a:hover { color: #bfdbfe; }
 
